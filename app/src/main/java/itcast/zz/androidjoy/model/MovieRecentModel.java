@@ -29,6 +29,6 @@ public class MovieRecentModel {
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
         MovieRecentAPI movieRecentAPI = retrofit.create(MovieRecentAPI.class);
-        return movieRecentAPI.getMovieRecent("郑州", MovieRecentAPI.KEY);
+        return movieRecentAPI.getMovieRecent(city, MovieRecentAPI.KEY);
     }
 }

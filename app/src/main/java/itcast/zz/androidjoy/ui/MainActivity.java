@@ -1,4 +1,4 @@
-package itcast.zz.androidjoy.view;
+package itcast.zz.androidjoy.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import itcast.zz.androidjoy.R;
 import itcast.zz.androidjoy.adapter.MovieRecentListAdapter;
 import itcast.zz.androidjoy.model.Result;
 import itcast.zz.androidjoy.presenter.MovieRecentPresenter;
+import itcast.zz.androidjoy.view.IRecentMovieView;
 
 public class MainActivity extends AppCompatActivity implements IRecentMovieView {
 
