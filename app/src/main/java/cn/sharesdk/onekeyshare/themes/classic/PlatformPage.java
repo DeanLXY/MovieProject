@@ -68,6 +68,13 @@ public abstract class PlatformPage extends OnekeySharePage {
 			}
 		});
 		llPage.addView(vTop, lp);
+
+		llPanel = new LinearLayout(activity);
+		llPanel.setOrientation(LinearLayout.VERTICAL);
+		lp = new LinearLayout.LayoutParams(
+				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+		llPanel.setAnimation(animShow);
+		llPage.addView(llPanel, lp);
 		///////////////增加分享到layout
 		lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,130);
 		lp.setMargins(0,0,0,0);
@@ -85,13 +92,6 @@ public abstract class PlatformPage extends OnekeySharePage {
 		buttonLayout.addView(tv,lp2);
 		llPanel.addView(buttonLayout,lp);
 		//////////////
-		llPanel = new LinearLayout(activity);
-		llPanel.setOrientation(LinearLayout.VERTICAL);
-		lp = new LinearLayout.LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-		llPanel.setAnimation(animShow);
-		llPage.addView(llPanel, lp);
-
 		MobViewPager mvp = new MobViewPager(activity);
 		ArrayList<Object> cells = collectCells();
 		PlatformPageAdapter adapter = newAdapter(cells);
