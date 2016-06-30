@@ -2,16 +2,13 @@ package itcast.zz.androidjoy.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import cn.sharesdk.framework.ShareSDK;
 import itcast.zz.androidjoy.R;
 
 public class MovieLinkActivity extends BaseActivity {
@@ -94,10 +91,9 @@ public class MovieLinkActivity extends BaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_movie_link,menu);
+        getMenuInflater().inflate(R.menu.menu_movie_link, menu);
         return true;
     }
 
 
-    
 }
