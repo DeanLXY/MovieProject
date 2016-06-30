@@ -22,7 +22,7 @@ import itcast.zz.androidjoy.utils.AfterPermissionGranted;
 import itcast.zz.androidjoy.utils.EasyPermissions;
 import itcast.zz.androidjoy.view.ILocationChangeView;
 
-public class MovieActivity extends AppCompatActivity implements ILocationChangeView, EasyPermissions.PermissionCallbacks {
+public class MovieActivity extends BaseActivity implements ILocationChangeView, EasyPermissions.PermissionCallbacks {
 
 
     private SectionsPagerAdapter mSectionsPagerAdapter;

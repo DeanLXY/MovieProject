@@ -11,7 +11,7 @@ import itcast.zz.androidjoy.model.Result;
 import itcast.zz.androidjoy.presenter.MovieRecentPresenter;
 import itcast.zz.androidjoy.view.IRecentMovieView;
 
-public class MainActivity extends AppCompatActivity implements IRecentMovieView {
+public class MainActivity extends BaseActivity implements IRecentMovieView {
 
     private RecyclerView recyclerView;
 

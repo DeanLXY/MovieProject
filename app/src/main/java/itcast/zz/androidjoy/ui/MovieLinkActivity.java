@@ -15,7 +15,7 @@ import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.onekeyshare.OnekeyShare;
 import itcast.zz.androidjoy.R;
 
-public class MovieLinkActivity extends AppCompatActivity {
+public class MovieLinkActivity extends BaseActivity {
 
     private WebView webView;
     private String url;
